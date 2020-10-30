@@ -10,12 +10,7 @@
         <br />
         <a href="https://www.wongnai.com/listings/thai-cuisine">This is a Link</a>
 
-        <h2>The unordered list</h2>
-        <ul>
-            <li>Google</li>
-            <li>Yahoo</li>
-            <li>Amazon</li>
-        </ul>
+        <p>น้องสาวคนเล็กของฉันเคยโดนลงทัณฑ์บน และมีจดหมายมาที่บ้าน เพราะมีเด็กผู้ชายบอกเธอว่า “ผู้หญิงเขาไม่ตดกันหรอก” เธอเลยนั่งบนตัวเขาแล้วก็ตดใส่</p>
 
     </body>
 </html>
