@@ -4,7 +4,7 @@
         <title>Hello world</title>
     </head>
     <body>
-        <p>My นางสาวรวิพร สมอฤทธิ์ ชื่อเล่น เก๋</p>
+        <p>นางสาวรวิพร สมอฤทธิ์ ชื่อเล่น เก๋</p>
         <img src="cat.jpg" />
         <img src="cat2.jpg" />
         <br />
