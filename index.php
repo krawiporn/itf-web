@@ -8,7 +8,7 @@
         <img src="cat.jpg" />
         <img src="cat2.jpg" />
         <br />
-        <a href="http://www.it.kmitl.ac.th">This is a Link</a>
+        <a href="https://www.wongnai.com/listings/thai-cuisine">This is a Link</a>
 
         <h2>The unordered list</h2>
         <ul>
