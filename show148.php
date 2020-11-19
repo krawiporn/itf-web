@@ -1,4 +1,5 @@
 <html>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 <head>
 <title>ITF Lab</title>
 </head>
@@ -12,8 +13,8 @@ if (mysqli_connect_errno($conn))
 }
 $res = mysqli_query($conn, 'SELECT * FROM guestbook');
 ?>
-<table width="600" border="1">
-  <tr>
+<table width="600" border="1" class="table table-striped table-dark">
+  <tr class="bg-info">
     <th width="100"> <div align="center">Name</div></th>
     <th width="350"> <div align="center">Comment </div></th>
     <th width="150"> <div align="center">Link </div></th>
@@ -26,11 +27,16 @@ while($Result = mysqli_fetch_array($res))
     <td><?php echo $Result['name'];?></div></td>
     <td><?php echo $Result['comment'];?></td>
     <td><?php echo $Result['link'];?></td>
+    <td>
+      <a href="edit.php?id=<?php echo $Result['id']?>" class="btn btn-outline-success" >EDIT</a>
+      <a href="del.php?id=<?php echo $Result['id']?>" class="btn btn-outline-danger"onclick="return confirm('Confirm data deletion?')">DELETE</a>
+    </td>
   </tr>
 <?php
 }
 ?>
 </table>
+<button type="button" class="btn btn-outline-warning" onclick ="window.location.href='form.html'">ADD</button>                                                                                                       
 <?php
 mysqli_close($conn);
 ?>
